@@ -21,7 +21,7 @@ gradle bootRun
 Voce pode subir o projeto normalmente utilizando sua IDE
 
 ## Testando o projeto
-Vamos fazer um POST da mensagem e a partir dos logs sera possivel ver o consumer enviando a mensagem e producer consumindo a mesma:
+Vamos fazer um POST da mensagem e a partir dos logs sera possivel ver o producer enviando a mensagem e o consumer consumindo a mesma:
 ```bash
 curl --location --request POST 'localhost:8081/messages?message=ola%20kafka'
 ```
