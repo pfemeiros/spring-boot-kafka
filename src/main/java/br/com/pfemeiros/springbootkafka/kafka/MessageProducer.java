@@ -18,7 +18,7 @@ public class MessageProducer {
 
     public void writeMessage(String message) {
         // Envia mensagem para o topico
-        kafkaTemplate.send(TOPIC, message);
+        kafkaTemplate.send(TOPIC, "chave", message);
         log.info("Message sent: " + message);
     }
 
